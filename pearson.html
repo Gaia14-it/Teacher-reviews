@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Pearson review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="fill" class="fill">
+        <div class="class">
+            <label for="select">Class</label>
+            <select name="select" id="class" required>
+                <option value=""></option>
+                <option value="one">Algebra 1</option>
+                <option value="two">Precalculus</option>
+            </select>
+        </div>
+        <div class="topic">
+            <label for="lesson">Topic</label>
+            <input type="text" name="lesson" id="lesson" required>
+        </div>
+        <div class="period">
+            <label for="select2">Period</label>
+            <select name="select2" id="period" required>
+                <option value=""></option>
+                <option value="cl1">1st</option>
+                <!-- <option value="cl2">2nd</option> -->
+                <option value="cl3">3rd</option>
+                <!-- <option value="cl4">4th</option> -->
+                <option value="cl5">5th</option>
+                <option value="cl6">6th</option>
+            </select>
+        </div>
+        <div class="rate">
+            <label for="score">Rate</label>
+            <input type="number" name="score" id="score" min="1" max="5" step="0.5" required>
+        </div>
+        <div class="opinion">
+            <label for="opinion">Critisism</label>
+            <textarea name="opinion" id="op"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
