@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="fill" class="fill">
+    <form class="fill">
         <div class="class">
             <label for="select">Class</label>
             <select name="select" id="class" required>
@@ -30,16 +30,11 @@
                 <option value="cl5">5th</option>
             </select>
         </div>
-        <div class="rate">
-            <label for="score">Rate</label>
-            <input type="number" name="score" id="score" min="1" max="5" step="0.5" required>
-        </div>
         <div class="todo">
             <label for="todo">To do list</label>
-            <text name="todo" id="op"></text>
+            <input type="text" name="todo" id="task" required>
         </div>
         <button type="submit">Submit</button>
-
     </form>
 </body>
 </html>
