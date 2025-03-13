@@ -1,0 +1,14 @@
+.grid{
+    display: grid;
+    grid-template-columns:[full-start] minmax(1em, 1fr) [main-start] minmax(0,40em) [main-end] minmax(1em,1fr) [full-end];
+}
+.teacher{
+    border: 1px solid rgb(128, 125, 120);
+    border-radius: 10px;
+    box-shadow: 1px 1px grey;
+    grid-column: [full];
+}
+.teacher:hover{
+    box-shadow: 0;
+    border: 0;
+}
