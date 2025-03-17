@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Brinks review</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <form class="fill">
         <div class="class">
             <label for="select">Class</label>
-            <select name="select" id="class" required>
+            <select name="course" id="class" required>
                 <option value=""></option>
                 <option value="one">Personal finance</option>
                 <option value="two">AP Calculus</option>
@@ -19,11 +20,11 @@
         </div>
         <div class="topic">
             <label for="lesson">Topic</label>
-            <input type="text" name="lesson" id="lesson" required>
+            <input type="text" name="topic" id="lesson" required>
         </div>
         <div class="period">
-            <label for="select2">Period</label>
-            <select name="select2" id="period" required>
+            <label for="period">Period</label>
+            <select name="period" id="period" required>
                 <option value=""></option>
                 <option value="cl1">1st</option>
                 <option value="cl2">2nd</option>
@@ -38,5 +39,6 @@
         </div>
         <button type="submit" id="sub">Submit</button>
     </form>
+    <div class="tasks"></div>
 </body>
 </html>
