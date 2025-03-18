@@ -5,7 +5,12 @@
     width: fit-content;
     border: black solid 2px;
     border-radius: 15px;
-    box-shadow: 10px 10px black;
+    box-shadow: 10px 10px maroon;
     padding: 10px;
     margin: 5px;
+}
+.tasks{
+    border: 1px solid #222;
+    border-radius: 10px;
+    box-shadow: 5px 5px maroon;
 }
