@@ -44,12 +44,20 @@ async function postTodo(form) {
 let tasksContainer = document.querySelector(".tasks")
 
 function render(todoList) {
-    tasksContainer.innerHTML = todoList.map(course-todo => {
+    tasksContainer.innerHTML = todoList.map(courseTodo => {
+        console.log(courseTodo)
         return`
         <ul>
-        <li> ${todo.title}</li>
-        <button data-todoid = "${course-todo.id}" onclick = "deleteTodo(this)"
+        <li> ${courseTodo.course}, ${courseTodo.topic}, ${courseTodo.period}, ${courseTodo.todo}</li>
+        <button data-todoid = "${courseTodo.id}" onclick = "deleteTodo(this)">Delete</button>
+        </ul>
         `
     })
+    .join("")
 }
 
+async function deleteTodo(button) {
+    let todoId = button.dataset.todoid;
+    let response = await request("delete", `course-todo/${todoId}`)
+    render(response.data)
+}
