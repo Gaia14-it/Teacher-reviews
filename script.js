@@ -47,10 +47,10 @@ function render(todoList) {
     tasksContainer.innerHTML = todoList.map(courseTodo => {
         console.log(courseTodo)
         return`
-        <ul>
-        <li> ${courseTodo.course}, ${courseTodo.topic}, ${courseTodo.period}, ${courseTodo.todo}</li>
+        <form>
+        <input type="checkbox"><label> ${courseTodo.course}, ${courseTodo.topic}, ${courseTodo.period}, ${courseTodo.todo}</label></input>
         <button data-todoid = "${courseTodo.id}" onclick = "deleteTodo(this)">Delete</button>
-        </ul>
+        </form>
         `
     })
     .join("")
