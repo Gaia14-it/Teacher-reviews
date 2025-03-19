@@ -1,3 +1,6 @@
+html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 .grid{
     display: grid;
     grid-template-columns:[full-start] minmax(1em, 1fr) [main-start] minmax(1em,1fr) [main-end] minmax(1em,1fr) [full-end];
