@@ -31,3 +31,7 @@ body {
     grid-template-rows: repeat(1, 1fr);
     gap: 5px;
 }
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
